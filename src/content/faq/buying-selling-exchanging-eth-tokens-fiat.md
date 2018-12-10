@@ -1,5 +1,5 @@
 {
-"title"       : "Where Can I Buy / Sell / Trade / Exchange my ETH or Tokens?",
+"title"       : "Where Can I Buy / Sell / Trade / Exchange My ETH or Tokens?",
 "sort"        : "14",
 "category"    : "FAQ",
 "description" : "FAQ",
@@ -10,7 +10,7 @@
 ---%
 
 
-Here is a list of reputable services you can use to buy and sell ETH / Tokens / fiat (USD, EUR, etc.). There are many, many more out there but these are the ones we are familar with.
+Here is a list of reputable services you can use to buy and sell ETH / tokens / fiat (USD, EUR, etc.). There are many, many more out there but these are the ones we are familar with.
 
 **Pro Tip**: Always google "`brand name` scam" and read about people's experiences before choosing to send to a random service or website.
 
