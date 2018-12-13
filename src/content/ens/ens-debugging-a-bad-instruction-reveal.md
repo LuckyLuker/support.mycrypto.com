@@ -9,40 +9,40 @@
 
 ---%
 
-### 1\. Make sure you actually placed a bid:
+### 1\. Make sure you actually placed a bid.
 
-*   Look up your address on [Etherscan](https://etherscan.io) in order to find the transaction in which you placed your bid.
-*   It will be an outgoing transaction (orange)
-*   To [ENS-Registrar](https://etherscan.io/address/0x6090a6e47849629b7245dfa1ca21d94cd15878ef)
-*   With an ETH value >= 0.01 ETH _(not one that says "0 Ether")_
-*   Was sent 2-4 days ago _(if you are just revealing your bid now)_
-*   That, when you click on the TX hash, has "Function: newBid(bytes32 sealedBid)" under "Input Data"
-*   If you also opened the auction, this transaction should be around the same time, but not before, the time you started the auction. You can find the start auction TX by typing in your name on [https://etherscan.io/enslookup?q=yourname.eth](https://etherscan.io/enslookup?q=yourname.eth) and clicking on the bottom-most TX hash.
+*   Look up your address on [Etherscan](https://etherscan.io) in order to find the transaction by which you placed your bid.
+*   It will be an outgoing transaction (orange). 
+*   It will have been sent to [ENS-Registrar](https://etherscan.io/address/0x6090a6e47849629b7245dfa1ca21d94cd15878ef).
+*   It will have an ETH value >= 0.01 ETH _(not one that says "0 Ether")_.
+*   It will have been sent 2-4 days ago _(if you are just revealing your bid now)_.
+*   When you click on the transaction (TX) hash, it should have "Function: newBid(bytes32 sealedBid)" under "Input Data."
+*   If you also opened the auction, this TX should be around the same time you started the auction but not before. You can find the start auction TX by typing in your name on [https://etherscan.io/enslookup?q=yourname.eth](https://etherscan.io/enslookup?q=yourname.eth) and clicking on the bottom-most TX hash.
 
-Once you find this, copy and paste the value in the "Input Data" into a text document & remove the "MethodId:" and "[0]:" so that it looks like this: `0xce92dced69faf18dd0953d9124d7917234b0efc05c78fd0d9abfc6ffb32d512680fdbb65`.
+Once you find this, copy and paste the value in the "Input Data" into a text document and remove the "MethodId:" and "[0]:" so that it looks like this: `0xce92dced69faf18dd0953d9124d7917234b0efc05c78fd0d9abfc6ffb32d512680fdbb65`.
 
 ### 2\. Check to see if the information you saved matches the information you sent with your bid.
 
-*   Go to [https://legacy.mycrypto.com/helpers.html](https://legacy.mycrypto.com/helpers.html)
+*   Go to [https://legacy.mycrypto.com/helpers.html](https://legacy.mycrypto.com/helpers.html).
 *   Scroll to the "ENS" section and enter the following:
-*   The address you bid from
-*   ENS Name you Bid On _(no '.eth' at the end!)_, or the namehash from your long string under "Hashed ENS Name (Label Hash)"
-*   The amount you bid
-*   Your Secret, or the sha3 secret from your long string under "Your Secret (Hashed)"
+    *   The address you bid from.
+    *   The ENS Name you Bid On _(no '.eth' at the end!)_ or the namehash from your long string under "Hashed ENS Name (Label Hash)".
+    *   The amount you bid.
+    *   Your Secret, or the SHA3 secret from your long string under "Your Secret (Hashed)."
 
-When you do this, the following four fields will populate with long data. You want compare the string you copied earlier ( `0xce92dced69faf18dd0953d9124d7917234b0efc05c78fd0d9abfc6ffb32d512680fdbb65`) to the string shown under **"New Bid Data"**.
+When you do this, the following four fields will populate with long data. You want to compare the string you copied earlier ( `0xce92dced69faf18dd0953d9124d7917234b0efc05c78fd0d9abfc6ffb32d512680fdbb65`) to the string shown under **"New Bid Data"**.
 
 ### 3\. Try alternate values.
 
-*   Try entering 0.01, 0.1, 1 and any other values you have bid on other auctions under "Amount you Bid (ETH)".
-*   Check the amount that you sent with your bid (the amount shown that you sent in your transaction from step 1)
+*   Try entering 0.01, 0.1, 1, and any other values you have bid in other auctions under "Amount you Bid (ETH)."
+*   Check the amount that you sent with your bid (the amount shown that you sent in your transaction from step 1).
 *   Look through your transaction history or any information you have saved for other auctions, and try using those values at the amount you bid.
 *   Check again to make sure that you for sure sent from the address you entered.
 *   Try changing secrets to other secrets for other auctions. Did you change the secret instead of using the pre-filled one? Try entering common words and phrases you may have used.
 
 ### 4\. Once you match the string successfully, you can reveal your bid manually using this exact information.
 
-Copy the "Reveal Data" string and go to [https://mycrypto.com/account](https://mycrypto.com/account) and unlock the wallet for the address that you placed the bid on. This address should also be the same address entered on the https://legacy.mycrypto.com/helpers.html.
+Copy the "Reveal Data" string, go to [https://mycrypto.com/account](https://mycrypto.com/account), and unlock the wallet for the address that you placed the bid on. This address should also be the same address entered on the https://legacy.mycrypto.com/helpers.html.
 
 Enter the following information into the fields:
 
@@ -53,11 +53,11 @@ Enter the following information into the fields:
 
 ### 5\. Generate and sign your transaction.
 
-Click your TX hash after you send it. Ensure there are no errors (you may have to refresh a few times.)
+Click your TX hash after you send it. Ensure there are no errors (you may have to refresh a few times).
 
 Then, in a new tab, go to [https://etherscan.io/enslookup?q=yourname.eth](https://etherscan.io/enslookup?q=yourname.eth) and type in the name you bid on. Ensure that you see a very recent transaction from your address with "Unseal Bid" next to it.
 
-##### You should probably also save the finalize data. This will allow you to easily finalize the transaction in a few days.
+##### You should probably also save the verified data. This will allow you to easily finalize the transaction in a few days.
 
 
-##### If you forgot to save your secret key, [read this](https://support.mycrypto.com/ens/ens-brute-forcing-secret-word-phrases.html)
+##### If you forgot to save your secret key, [read this](https://support.mycrypto.com/ens/ens-brute-forcing-secret-word-phrases.html).
