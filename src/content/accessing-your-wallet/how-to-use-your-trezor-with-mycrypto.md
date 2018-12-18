@@ -120,7 +120,7 @@ The TREZOR is one of the best and easiest-to-use cryptocurrency hardware wallets
 
 
 <div class="alert alert-info">
-  [If your transaction never shows up on Etherscan / Etherchain / MyCrypto after a new minutes, you may need to send with more gas. Click to learn more about gas.](https://support.mycrypto.com/gas/).
+  [If your transaction never shows up on Etherscan / Etherchain / MyCrypto after a few minutes, you may need to send with more gas. Click to learn more about gas.](https://support.mycrypto.com/gas/).
 </div>
 
 
